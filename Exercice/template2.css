@@ -1,0 +1,60 @@
+#content{
+    width: 70%;
+    margin: auto;
+}
+
+header,nav,section,h2,article,section,h3,article,aside,footer{
+    text-align: center;
+    line-height: 150px;
+}
+header{
+    height: 150px;
+    background-color: blueviolet;
+}
+nav{
+    height: 150px;
+    background-color: rgb(148, 179, 214);
+
+}
+main{    
+    background-color: brown;
+    display: flex;
+    
+}
+section{
+    align-self: start;    
+    width: 60%;
+    background-color: rgb(218, 233, 155);
+}
+section>div:first-child{    
+    background-color: rgb(238, 238, 236);
+}
+h2{
+    height: 150px;    
+    background-color: rgb(241, 131, 214);
+}
+article{
+
+    height: 450px;    
+    background-color: rgb(238, 181, 238);
+}
+
+h3{
+    height: 150px;    
+    background-color: rgb(241, 131, 214);
+}
+
+
+
+
+aside{
+    width: 40%;
+    min-height: 600px;    
+    background-color: rgb(190, 190, 190);
+    
+    line-height: 600px;
+}
+footer{
+    height: 150px;
+    background-color: rgb(252, 186, 89);
+}
