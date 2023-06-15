@@ -27,5 +27,9 @@ function fillArray(num) {
 }
 
 // execution de la fonction : 
-var fruits = fillArray(3);
+// var fruits = fillArray(3);
+// console.log(fruits);
+
+var nombre = prompt("Insérez le nombre d'élément de votre array : ");
+var fruits = fillArray(nombre);
 console.log(fruits);
