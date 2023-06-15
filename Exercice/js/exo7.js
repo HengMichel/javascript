@@ -122,7 +122,29 @@ var prenons = [
   "Wassila",
 ];
 
-prenons = Math.random();
-prenons = prenons*13;
-prenons = Math.floor(prenons);
-document.write(prenons);
+var prenonsRan = Math.random();
+prenonsRan = prenonsRan*12;
+prenonsRan = Math.floor(prenonsRan);
+// **********************************************************
+// Le prenom ne change pas mais le numero varie a chaque click
+// result = prenons[6] + " " + prenonsRan   
+// ************************************************************
+
+// **********************************************************
+// Le prenom et l'index correspondant change à chaque clic
+// result = (prenons [prenonsRan]) + " " + prenonsRan
+// document.write(result);
+// **********************************************************
+
+// **********************************************************
+// l'index et le prenom correspondant change à chaque clic
+// result = prenonsRan + " " + (prenons [prenonsRan])
+// document.write(result);
+// **********************************************************
+
+result  = prenons[prenonsRan];
+document.write(prenonsRan + " " + result);
+
+
+// *****************************Exercice Mitra********************************************************************
+
