@@ -11,6 +11,6 @@ if(moyen>12 && moyen <= 20){
     document.write(moyen +" reçu avec mention ");
     }
 if(moyen>20 ){
-    document.write("Veuillez saisir une note en 0 et 20");
+    document.write("Veuillez saisir une note entre 0 et 20");
 }    
 
