@@ -28,20 +28,21 @@
 //     document.write("Heure incorrecte !");
 // }
 
-{/* <p>Ecrivez un programme qui demande une heure à un utilisateur sous la forme de trois informations (heures, minutes,
+{
+  /* <p>Ecrivez un programme qui demande une heure à un utilisateur sous la forme de trois informations (heures, minutes,
 		secondes).</p>
 	<p>il affiche ensuite l'heure qu'il sera une seconde plus tard.</p>
-	<p>Les erreurs de saisie doivent être gérées.</p> */}
+	<p>Les erreurs de saisie doivent être gérées.</p> */
+}
 
-    
-    // Demande à l'utilisateur d'entrer l'heure
-var heureUtilisateur = prompt("Veuillez entrer l'heure (format HH:MM:SS) :");
+// Demande à l'utilisateur d'entrer l'heure
+// var heureUtilisateur = prompt("Veuillez entrer l'heure (format HH:MM:SS) :");
 
 // Divise l'heure en heures, minutes et secondes
-var temps = heureUtilisateur.split(":");
-var heures = parseInt(temps[0]);
-var minutes = parseInt(temps[1]);
-var secondes = parseInt(temps[2]);
+// var temps = heureUtilisateur.split(":");
+// var heures = parseInt(temps[0]);
+// var minutes = parseInt(temps[1]);
+// var secondes = parseInt(temps[2]);
 
 // Ajoute une seconde
 // secondes++;
@@ -63,3 +64,39 @@ var secondes = parseInt(temps[2]);
 
 // Affiche l'heure avec une seconde de plus
 // console.log("L'heure actuelle avec une seconde de plus : " + heures + ":" + minutes + ":" + secondes);
+
+// var secondes;
+// var minutes;
+// var heures;
+
+var heures = prompt("indiquez l'heure");
+var minutes = prompt("indiquez les minutes");
+var secondes = prompt("indiquez les secondes");
+
+if (
+  heures >= 0 &&
+  heures <= 23 &&
+  minutes >= 0 &&
+  minutes <= 59 &&
+  secondes >= 0 &&
+  secondes <= 59
+) {
+  secondes++;
+  if (secondes === 60) {
+    secondes = 00;
+    minutes++;
+
+    if (minutes === 60) {
+      minutes = 00;
+      heures++;
+      if (heures === 24) {
+        heures = 00;
+      }
+    }
+  }
+
+  document.write(heures + "  h  " + minutes + "  min   " + secondes + "  sec  ");
+}else{
+	
+	document.write("error");
+}
