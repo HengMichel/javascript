@@ -13,3 +13,5 @@ var nb1 = Number(prompt("Entrez nb1 :"));
 				nb3 = nb3 * 2 + nb2;
 			}
 		}
+
+		

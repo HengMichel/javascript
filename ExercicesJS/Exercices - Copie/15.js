@@ -1,18 +1,18 @@
 // alert('test');
 
 //REPONSE FORMATEUR
-var choix = prompt("Choisis un nombre entre 2 et 9:");
-while ((choix > 1) || (choix < 10)) {
-    if ((choix >= 2) && (choix <= 9)) {
-        for (var i = 1; i <= 10; i++) {
-            var res = choix * i;
-            document.write(choix + " x " + i + " = " + res + "<br />");
-        }
-        break;
-    } else {
-        choix = Number(prompt("Entrez un nombre entre 2 et 9 : "));
-    }
-}
+// var choix = prompt("Choisis un nombre entre 2 et 9:");
+// while ((choix > 1) || (choix < 10)) {
+//     if ((choix >= 2) && (choix <= 9)) {
+//         for (var i = 1; i <= 10; i++) {
+//             var res = choix * i;
+//             document.write(choix + " x " + i + " = " + res + "<br />");
+//         }
+//         break;
+//     } else {
+//         choix = Number(prompt("Entrez un nombre entre 2 et 9 : "));
+//     }
+// }
 
 // Réponses incomplètes
 // var choix = prompt("Choisis un nombre :");
@@ -46,3 +46,14 @@ while ((choix > 1) || (choix < 10)) {
 
 
 
+var saisiNumb = prompt('Veuillez saisir  un nombre');
+while ((saisiNumb>1) || (saisiNumb<10)){
+    if((saisiNumb >= 2) && (saisiNumb <= 9)){
+        for(var i= 1; i <= 10 ; i++){
+            var tab = saisiNumb*i;
+            document.write(saisiNumb + 'x' + i 
+            + '='+ tab) + '<br/>';
+
+        }
+    }   
+}

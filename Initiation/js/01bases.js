@@ -119,5 +119,5 @@ console.log(nb_en_lettres);
 console.log(typeof nb_en_lettres);
 
 
-
+    
 // FIN
