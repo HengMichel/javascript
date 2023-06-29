@@ -344,3 +344,60 @@ return result3
 }
 let somme = sommeTab(1,6,9);
 console.log(somme);
+
+
+// ecrire une fonction maxTab qui prend en paramètre un tableau composé de
+// nombres
+// la fonction devra retourner le plus grand nombre du tableau
+// exemple:
+// maxTab([2, 7, 4, 0]) => 7
+
+
+function maxTab ([2,7,4,0]){
+    maxTab[1];
+
+}
+console.log(maxTab);
+
+
+
+
+// ecrire une fonction minTab qui prend en paramètre un tableau composé de
+// nombres
+// la fonction devra retourner le plus petit nombre du tableau
+// exemple:
+// minTab([2, 7, 4, 0]) => 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ecrire une fonction maxMinTab qui prend en paramètre un tableau composé de
+// nombres et un boolean
+// ● si le deuxieme parametre égale true la fonction devra retourner le plus
+// grand nombre du tableau
+// ● sinon elle retournera le plus petit
+// exemple:
+// maxMinTab([2, 7, 4, 0], true) => 7
+// maxMinTab([2, 7, 4, 0], false) => 0
+
+
+
+
+
+// exercice
+// soit les tableaux suivants
+// const array = [1, 12, 3, 67, 1, 23, 0, 87];
+// const array2 = [1, 1, 2, 3, 4, 5];
+// const array3 = [0];
+// const array4 = ['never gonna', 'give you', 'up'];
+// const array5 = ['never gonna', 'let you', 'down'];
