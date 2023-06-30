@@ -1,5 +1,4 @@
-// ************************************* Fonction  *****************************************************************
-
+// ************************************* Function  *****************************************************************
 function maxMin(a, b, c) {
     if (c == true) {
       if (a > b) {
@@ -129,7 +128,7 @@ function maxMin(a, b, c) {
   let somme = 0; // la variable somme vaut 0 au depart
   
   for (let i = 1; i <= 5; i++) {
-    // console.log(i);
+    console.log(i);
     somme = somme + i;
     // somme += i;
   }
@@ -394,7 +393,5 @@ console.log(phrase(words));
 // palindromes
 
 
-function estPalindrome (str){
-    let palindrome ;
-    return str;
-}
+
+const estPalindrome = ("Radar"," level ", "Civic"," Deified", "Madam"," Kayak", "Rotator", "Stats") ? " true!   palindrome!!! " : " false !";
