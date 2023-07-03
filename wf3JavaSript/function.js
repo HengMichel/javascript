@@ -395,3 +395,141 @@ console.log(phrase(words));
 
 
 const estPalindrome = ("Radar"," level ", "Civic"," Deified", "Madam"," Kayak", "Rotator", "Stats") ? " true!   palindrome!!! " : " false !";
+
+
+
+// creation de la classe personne
+class Personne{
+    // on appelle la fonction constructor (nom imposé par js) avec 2 param : n et a 
+    constructor(n, a) { 
+        this.nom = n; // on declare une variable nom qui prend la valeur de n
+        this.age = a; // on declare une variable age qui prend la valeur de a
+    }
+
+    saluer() { // la methode saluer permet d'afficher la phrase : "Bonjour, je m'appelle "nom de l'objet" et j'ai "age de l'ojet" ans.
+        console.log("Bonjour, je m'appelle "+this.nom+ " et j'ai "+ this.age+ " ans.");
+    }
+}
+// creation des objets p1 et p2
+// pour recuperer l'age ou le nom de p1 faire la syntaxe : p1.age; p1.nom;
+let p1 = new Personne("toto", 10); // il s'appelle toto et a 10 ans
+// pour recuperer l'age ou le nom de p2 faire la syntaxe : p2.age; p2.nom;
+let p2 = new Personne("titi", 9); // il s'appelle titi et a 9 ans
+// pour appeler la methode saluer sur un des objets faire: p1.saluer();
+p1.saluer(); // "Bonjour, je m'appelle toto et j'ai 10 ans."
+p2.saluer(); // "Bonjour, je m'appelle titi et j'ai 9 ans."
+console.log(p2.nom);
+
+// EX01 :
+// Supposons que vous deviez modéliser une classe Cercle qui représente un cercle avec comme propriété,
+// rayon et les méthodes calculerSurface() qui calcule et reourne la surface du cercle et afficherInfo() 
+// qui affiche les informations du cercle dans la console.
+// Votre tâche consiste à créer la classe Cercle, instancier un objet Cercle et appelé les méthodes calculerSurface()
+//  et afficherInfo() pour l'objet instancié.
+// formule pour calculer la surface d'un cercle : PI multiplié par le rayon au carré PI*(rayon*rayon)
+class Cercle{
+      // on declare le constructeur de la classe qui prend un parametre qui est le rayon
+    constructor(r){
+      this.rayon = r;
+    }
+        // declarer les methodes calculerSurface et afficherInfo
+    calculerSurface() {       
+       // calculer la suface
+      let surface = Math.PI * Math.pow(this.rayon,2);
+      return surface;
+    }
+    afficherInfo() {
+      // console.log("Le rayon du cercle est de  " + this.rayon +" cm" +" et une surface de " + this.calculerSurface() + " cm2");
+      console.log("Le rayon du cercle est de  " + this.rayon +" cm" +" et une surface de " + Math.ceil(this.calculerSurface()) + " cm2");
+
+    }
+}
+
+let r1 = new Cercle(10); // instancier un objet cercle = Creer un objet Cercle
+r1.afficherInfo();
+
+
+// EX02 :
+// Supposons que vous deviez modéliser une classe CompteBancaire qui représente un compte bancaire avec comme propriété,
+// titulaire,solde et les méthodes deposer(montant) qui permet de déposer de l'argent sur le compte, retirer(montant)  qui permet de retirer de l'argent du compte et afficherSolde() qui affiche le solde actuel du compte. 
+
+// Votre tâche consiste à créer la classe CompteBancaire,créer le consctructor avec les paramètres : 
+// titulaire et solde
+// créer les méthodes:
+// déposer qui prend un paramètre pour ajouter de l'argent dans le compte
+// retirer qui prend un paramètre pour retirer de l'argent dans le compte
+// afficherSolde qui affiche le solde du compte dans la console
+
+// instancier un objet CompteBancaire avec comme titulaire: Abraham et solde 5 €
+// appeller la méthode ajouter en lui passant la valeur 10
+// appeller la méthode retirer en lui passant la valeur 7
+// appeller la méthode afficherSolde
+
+class CompteBancaire {
+  constructor(titu,sold){
+    this.titulaire = titu;
+    this.solde = sold;
+  }
+  deposer(montant){
+    this.solde = this.solde + montant;
+  }
+  retirer(montant){
+    this.solde -= montant;
+    // this.solde = this.solde - montant;
+  }
+  afficherSolde(){
+    console.log("Montant du solde est de " + this.solde + " €");
+  }
+}
+
+let compte1 = new CompteBancaire("Abraham",5);
+compte1.deposer(10);
+compte1.retirer(7);
+compte1.afficherSolde();
+
+// *****************************  Correction ******************************************
+// class CompteBancaire
+// class CompteBancaire{
+  // le constructeur prend 2 params: le titulaire => t et le solde => s
+
+  // constructor(t, s) { 
+  //     this.titulaire = t;
+  //     this.solde = s;
+  // }
+
+  // declarer les methode deposer, retirer et afficherSolde
+  // deposer(montant) { // deposer prend un param : montant
+  //     this.solde += montant;
+      // this.solde = this.solde + montant;
+  // }
+
+  // retirer(montant) {
+  //     this.solde -= montant;
+      // this.solde = this.solde - montant;
+  // }
+
+
+
+//   afficherSolde() {
+//       console.log("le solde de votre compte est de: "+this.solde+ " €");
+//   }
+// }
+// instancier un objet CompteBancaire
+// let compte = new CompteBancaire("Wassila", 80000);
+// compte.deposer(100000);
+// compte.retirer(50000);
+// compte.afficherSolde();
+
+// ******************************** FIN Correction *********************************************
+
+
+// ici on utilise une fonction traditionnelle
+function rappel() {
+  console.log("Ceci est une fonction de rappel")
+}
+setTimeout(rappel(), 2000);
+
+// ici on utilise une fonction anonyme (tendance plus "sexy")
+setTimeout(function() {
+  console.log("Ceci est une fonction de rappel")
+}, 2000)

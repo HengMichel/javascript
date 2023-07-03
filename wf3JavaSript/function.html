@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="function.js" defer></script> -->
+
+ 
+
+<head>
+    <title>Exercice DOM</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        .bouton{
+            padding: 10px;
+            border-radius: 15px;
+            border: solid 2px;
+        }
+    </style>
+</head>
+
+ 
+
+<body>
+    <div id="container">
+        <h1 class="title">Titre de la page</h1>
+        <p class="content">Contenu de la page</p>
+        <button id="btn">Cliquez ici</button>
+    </div>
+
+ 
+
+    <script>
+    // Votre code JS sera écrit ici
+//     getElementsByClassName() -> Renvoie une liste des éléments ayant le nom de classe donné.
+        let titre = document.querySelector(".title");
+        titre.classList.add("red");
+        // console.log(element.className);
+        console.log(titre.className);
+
+        let cont = document.querySelector("p[class='content']");
+        // cont.className="blue";
+        cont[0].className = "blue";
+        console.log(cont.className);
+
+        let b = document.getElementById("btn");
+        b.className = "bouton"
+        // b = document.querySelector("button");
+        // b.classList.add("bouton");
+        // console.log(element3.className);
+    </script>
+</body>
+
+</html>
+<!-- 
+    Sélectionner l'élément <h1> avec la classe "title" et ajoutez lui la classe red.
+    Sélectionner l'élément <p> avec la classe "content" et remplacez la classe content par la classe blue.
+    Sélectionner l'élément <button> avec l'ID "btn" donnez lui une classe bouton
+-->
