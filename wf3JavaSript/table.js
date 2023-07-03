@@ -75,18 +75,5 @@ fruit.fill("goyave");
 console.log(fruit);
 
 
-// exercice
-// Toujours avec ces cinq tableaux
-// Ecrivez une fonction "verifSort" qui prend en paramètre un tableau ainsi qu'un booléen
-// "asc".
-// ● Si "asc" est "true", on vérifie que le tableau passé en paramètre est trié par ordre
-// ascendant
-// ● sinon par ordre descendant.
-// Faites en sorte que si l'on ne passe pas de deuxième paramètre, le critère de vérification
-// soit ascendant par défaut.
-// Exemples :
-// verifSort(array, true) => doit retourner "false"
-// verifSort(array3) => doit retourner "true"
-// verifSort(array2, true) => doit retourner "true"
-// verifSort(array3, false) => doit retourner "true"
-// verifSort(array5, false) => doit retourner "true"
+
+
