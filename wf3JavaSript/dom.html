@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dom.js" defer></script>
+    <title>Document</title>
+
+<!-- ***************************  Manipulation du DOM  ******************************************* -->
+<!-- *************************** partie CSS **************************************** -->
+    <style>
+        h1{
+            color: blueviolet;
+            font-size: xx-large;
+        }
+    </style>
+<!-- ************************** fin partie CSS ************************************** -->
+</head>
+<body>
+
+    <h1 id="salut">Bonjour!</h1>
+    <div id="autre" class="maclasse btn primary"></div>
+    <div id="madiv" class="maclasse btn primary"></div>
+    <script>
+        // selectionner l'element
+        let elmt = document.getElementById("madiv");
+        // supprimer btn
+        elmt.classList.remove(elmt.classList[1]);
+        console.log(elmt.classList);
+
+        console.log(elmt.id);
+        // modification de l'attribut id
+        elmt.id = "newDiv";
+        console.log(elmt.id);
+
+        // selectionner l'element qui a l'id "salut"
+        let salut = document.getElementById("salut");
+        salut.style.color = "red"; // modifier sa couleur
+        // ajouter dans une fonction
+       setTimeout(function (){
+        let salut = document.getElementById("salut");
+        salut.style.color = "red";
+       }, 3000);
+
+    //    setTimeout(changeCouleur, 3000);
+    //    function changeCouleur(){
+    //     let salut = document.getElementById("salut");
+    //     salut.style.color = "red";
+    //    }
+    </script>
+
+
+<!-- ***************************  Manipulation du DOM  ******************************************* -->
+
+
+
+    <img src="" alt="">
+    <div id="autre"></div>
+    <div id="madiv" class="maclasse" style="color: red">
+        <p>Bonjour le monde</p>
+        <form action="">
+            <input type="email" name="Michel">
+            <input type="password" name="Michel">
+            <input type="text">
+            <input type="submit" value="clic">
+        </form>
+    </div>
+   
+<!-- ***************************  Manipulation du DOM  ******************************************* -->
+
+
+    <div id="monElement">Contenu initial</div>
+    <!-- apres execution de element.innerHTML = "<p>Nouveau contenu</p>" la div sera remplace par le contenu suivant -->
+    <!-- <div id="monElement">
+        <p>Nouveau contenu</p>
+    </div> -->
+    <script>
+        // Sélection de l'élément par son identifiant
+        var element = document.getElementById("monElement");
+        // Obtenir le contenu HTML de l'élément
+        var contenu = element.innerHTML;
+        console.log(contenu); // Affiche "Contenu initial"
+        // Définir un nouveau contenu HTML pour l'élément
+        element.innerHTML = "<p>Nouveau contenu</p>";
+    </script>
+
+
+
+
+
+<!-- ***************************  Manipulation du DOM  ******************************************* -->
+
+    <ul id="maListe">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <script>
+        // Sélection de l'élément par son identifiant
+        var liste = document.getElementById("maListe");
+        // Accéder à la liste des nœuds enfants de l'élément
+        var enfants = liste.childNodes;
+        console.log(enfants.length);
+        // Parcourir la liste des nœuds enfants et afficher leurs noms
+        for (var i = 0; i < enfants.length; i++) {
+            console.log(enfants[i].nodeName);
+        }
+
+        //  si on veut recuperer le premier enfant de liste
+        liste.firstChild;
+        // le deuxieme enfant
+        liste.childNodes[1];
+        enfants[1];
+        
+    </script>
+
+
+<!-- ***************************  Manipulation du DOM  ******************************************* -->
+
+<div id="monElement">Contenu initial</div>
+    <!-- apres l'execution de la ligne 18 la div sera remplace par 
+    <div id="monElement">Nouveau contenu</div>-->
+    <script>
+        // Sélection de l'élément par son identifiant
+        var element = document.getElementById("monElement");
+        // Accéder à la valeur du nœud texte de l'élément
+        var valeurInitiale = element.firstChild.nodeValue;
+        console.log(valeurInitiale); // Affiche "Contenu initial"
+        // Modifier la valeur du nœud texte de l'élément
+        element.firstChild.nodeValue = "Nouveau contenu";
+    </script>
+
+<!-- ***************************  Manipulation du DOM  ******************************************* -->
+
+<div id="madiv"></div>
+<script>
+    // Sélection de l'élément parent par son identifiant
+    var container = document.getElementById("madiv");
+
+    // Création d'un nouvel élément <p>
+    var paragraphe = document.createElement("p");
+
+    // on ajoute du text a notre paragraphe
+    paragraphe.textContent = "le texte qu'on a envie de mettre";
+    // la methode innerHTML ecrase le contenu initial de la balise selectionnee
+    // ajouter le paragraphe dans la div
+    container.appendChild(paragraphe);
+</script>
+
+<!-- ***************************  Manipulation du DOM  ******************************************* -->
+<!-- *************************** Depuis un formulaire **************************************** -->
+<form>
+    <input id="pseudo" type="text">
+</form>
+<script>
+   
+    var valeur = document.getElementById("pseudo").value; // récupère la valeur du champ input
+    console.log(valeur); // affiche une chaîne de caractère vide
+    document.getElementById("pseudo").value = "Toto"; // modifier la valeur du champ
+    var nouvelleValeur = document.getElementById("pseudo").value; // récupère la nouvelle valeur
+    console.log(nouvelleValeur); // affiche Toto
+</script>
+
+
+
+
+</body>
+</body>
+</html>
+
+
