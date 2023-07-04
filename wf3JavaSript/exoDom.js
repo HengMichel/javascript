@@ -26,39 +26,10 @@ btn.addEventListener('click', (e) => {
     })
   });   
 
-  // ******************************  Exo2  create calculate  ********************************************
+//  si vous arrivez a refaire le code de tel sorte qu'on puisse ajouter des todos => vous gagnez 0.5
+// si vous arrivez a faire en sorte que si on click sur une todo il devient rouge => 0.5
+// plus 1 pour la prochaine evalution
 
-  let btnPlus = document.getElementById("addi"); 
-  let btnMoins = document.getElementById("sous"); 
-  let btnMulti = document.getElementById("multi"); 
-  let btnDivi = document.getElementById("divi"); 
-  let btnTotal = document.getElementById("egal"); 
-  let nombre1 = document.getElementById("nombre1");
-  let nombre2 = document.getElementById("nombre2");
-  let op = "+";
+$("#todo").click(e) => {
 
-  btnPlus.addEventListener('click', () => {
-    op = "+";
-    
-  })
-  btnMoins.addEventListener('click', () => {
-    op = "-";
-    
-  })
-  btnMulti.addEventListener('click', () => {
-    op = "*";
-    
-  })
-  btnDivi.addEventListener('click', () => {
-    op = "/";
-    
-  })
-  btnTotal.addEventListener('click', () => {
-    op = ("nombre1" + "nombre2" != "+") ?  "+" :"-"  ? "-" : "/" ? "/" : "*" ? "*" : "+";
-    
-  })
-  
-
-
-  // const touches = [...document.querySelectorAll('.bouton')];
-  // console.log();
+}
