@@ -54,7 +54,11 @@ btn.addEventListener('click', (e) => {
     
   })
   btnTotal.addEventListener('click', () => {
-    op = ("nombre1" + "nombre2" == "+" : "nombre1" - "nombre2" == "-") ;
+    op = ("nombre1" + "nombre2" != "+") ?  "+" :"-"  ? "-" : "/" ? "/" : "*" ? "*" : "+";
     
   })
   
+
+
+  // const touches = [...document.querySelectorAll('.bouton')];
+  // console.log();
