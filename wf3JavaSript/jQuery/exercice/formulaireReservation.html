@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="formulaireReservation.js" defer></script>
+    <link rel="stylesheet" href="formulaireReservation.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div >
+      <h1>Formulaire de réservation</h1>
+
+      <form id="monForm">
+        <fieldset>
+          <div class="ligne">
+            <label for=" nom"></label>
+            <input type="text" id="nom" placeholder="nom" />
+          </div>
+
+          <div class="ligne">
+            <label for=" email"></label>
+            <input type="email" id="email" placeholder="email" />
+          </div>
+
+          <div class="ligne">
+            <label for=" telephone"></label>
+            <input type="number" id="telephone" placeholder="telephone" />
+          </div>
+
+          <div class="selection">
+            <select name="plat" id="plat">
+              <option value=""> choisir un plat</option>
+              <option value="thiebou dieune"> thiebou dieune</option>
+              <option value="salade de quinoa"> salade de quinoa</option>
+              <option value="sushi burger"> sushi burger </option>
+              <option value="filets de poulet panes">filets de poulet panes </option>
+            </select>
+
+            <select name=" dessert" id="dessert">
+              <option value=""> choisir un dessert</option>
+              <option value="churros maison"> churros maison </option>
+              <option value="biscuits au pépites"> biscuits au pépites </option>
+              <option value="bûche de noël"> bûche de noël </option>
+              <option value="gâteau au fromage"> gâteau au fromage </option>
+            </select>
+          </div>
+
+          <div class="prix">
+              <label for="totalHt"></label>
+              <input type="text" id="totalHt" placeholder=" totalHt"/>
+
+              <label for="totalTtc"></label>
+              <input type="text" id="totalTtc" placeholder=" totalTtc"/>
+          </div>
+          <div class="condition">
+            <!-- <label for="condition"></label> -->
+            <input type="checkbox" id="condition1" />
+            <strong>
+                J'accepte les conditions générales
+            </strong>
+          </div>
+          <button id="valide"> valider ma commande</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
