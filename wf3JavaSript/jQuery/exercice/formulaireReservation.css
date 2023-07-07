@@ -207,6 +207,7 @@ body {
     background-image: url("../img/fond.png"); */
   text-align: center;
   margin: auto;
+  background-color: rgb(188, 241, 127);
 }
 .container {
   /* width:1000px; */
@@ -243,7 +244,7 @@ input {
     width: 80%;
     border-radius: 5px ;
     margin-top: 10px;
-    
+    background-color: rgb(236, 233, 233);
 }
 
 select option {

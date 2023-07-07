@@ -78,7 +78,7 @@ propose.click(() => {
       $("#proposition").val("");
     } else {
         $("#proposition").css({
-            border: "1px solid red"
+            border: "10px solid red"
         })
     }
     } else {

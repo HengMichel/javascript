@@ -1,51 +1,280 @@
-body {
+/* https://fonts.google.com/ */
+
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
+
+/* 
+Une mise en page flexible doit avoir un élément parent avec la propriété display définie sur flex.
+Les éléments enfants directs du conteneur flexible deviennent automatiquement des éléments flexibles.
+
+.flexbox{
+display: flex;
+
+Flex Container : 
+flex-direction: column;
+flex-direction: column-reverse;
+flex-direction: row;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+flex-wrap: nowrap;
+flex-wrap: wrap-reverse;
+flex-flow: row wrap;
+justify-content: center;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: space-around;
+justify-content: space-between;
+justify-content: space-evenly;
+
+height: 200px; à définir absolument une hauteur quand on utilise "align-items"
+align-items: center;
+align-items: flex-start;
+align-items: flex-end;
+align-items: stretch;
+align-items: baseline;
+
+flex-wrap: wrap;
+align-content: space-between;
+
+flex-wrap: wrap;
+align-content: space-around;
+
+flex-wrap: wrap;
+align-content: stretch;
+
+flex-wrap: wrap;
+align-content: center;
+align-content: space-evenly;
+
+flex-wrap: wrap;
+align-content: flex-start;
+
+flex-wrap: wrap;
+align-content: flex-end;
+
+justify-content: center;
+align-items: center;
+
+Child Elements (Items) :
+display: flex;
+align-items: stretch; ->
+pour un item :
+order
+
+display: flex;
+align-items: stretch; ->
+pour un item :
+order
+
+display: flex;
+align-items: stretch;
+
+flex-grow
+
+display: flex;
+align-items: stretch;
+flex-shrink
+
+
+flex-basis
+flex : auto // On l'utilse pour les enfants
+align-self
+
+
+flex-flow
+
+}
+*/
+
+/*************** GLOBAL ***************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+}
+*{
+    box-sizing: border-box;/*pour garder la meme taille*/
+}
+img{
+    width:100%;
+}
+body{
     font-family: "Bebas Neue", sans-serif;
     font-family: "Montserrat", sans-serif;
     font-family: "Roboto", sans-serif;
-    background-image: url(mystere.jpg);
     background-size: cover;
-  }
-  h1 {
-    color: rgb(63, 49, 154);
-    margin: 50px;
-    text-align: center;
-  }
-   
-  .regle {
-    width: 70%;
+    background-color: rgb(3, 164, 169);
     margin: auto;
+}
+.container{
+    /*width:900px;*/
+    margin:0 auto;
+    /*pour centrer la page dans le navigateurs*/
+    
+}
+
+
+
+/*************** END GLOBAL ***************/
+
+/*************** HEADER ***************/
+h1 {
+  color: rgb(244, 169, 38);
+  margin: 50px;
+  text-align: center;
+}
+ 
+
+ 
+p {
+  font-size: 25px;
+  color: rgb(2, 61, 4);
+  font-weight: bold;
+  text-align: center;
+}
+ 
+button {
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgb(244, 169, 38);
+}
+#newGame{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+.proposition {
+  text-align: center;
+}
+ 
+fieldset {
+  border: 5px solid rgb(244, 169, 38);
+  width: 550px;
+  margin: auto;
+  font-weight: bold;
+  color: rgb(1, 2, 41);
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+}
+.ligne {
+  margin: 10px 0;
+  margin: auto;
+}
+.ligne #proposition{
+  margin-right: 30px;
+}
+.line #message{
+  margin-left: 40px;
+}
+input{
+  height: 30px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.281);
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+/*************** END HEADER ***************/
+
+/*************** NAV ***************/
+
+/*************** END NAV ***************
+
+/*************** MAIN ***************/
+
+/*************** SECTION 1 ***************/
+
+/*************** END SECTION 1 ***************/
+
+/*************** SECTION 2 ***************/
+
+/*************** END SECTION 2 ***************/
+
+/*************** SECTION 3 ***************/
+
+/*************** END SECTION 3 ***************/
+
+/*************** END MAIN ***************/
+
+/*************** FOOTER ***************/
+
+/*************** END FOOTER ***************/
+
+/*************** MEDIAQUERY ***************/
+
+@media (max-width: 1400px) {
+  header {
+    /* background-color: #e68f15; */
   }
-   
-  p {
-    font-size: 25px;
-    color: rgb(83, 70, 224);
-    font-weight: bold;
-    text-align: center;
+ 
+}
+
+@media (max-width: 960px) {
+  header {
+    background-image: none;
+    background-color: rgb(141, 174, 79);;
   }
-   
-  button {
-    width: 100px;
-    height: 30px;
-    margin: 20px;
-    border-radius: 20px;
-    background-color: rgb(165, 159, 206);
+  nav {
+    display: none;
   }
-  .proposition {
-    text-align: center;
+  .img2 {
+    display: none;
   }
-   
-  fieldset {
-    border: 1px solid rgb(83, 70, 224);
-    width: 400px;
-    margin: auto;
-    font-weight: bold;
-    color: #2f8cff;
-    padding: 20px;
+  .container{
+    width: 100%;
+    display: block;
   }
-  .ligne {
-    margin: 20px;
-    text-align: center;
+  .sect21 {
+    display: block;
+    width: 100%;
   }
-  input{
-    background-color: white;
+  .sect2{
+    width: 100%;
+    display: block;
   }
+  .sect3{
+    width: 100%;
+    display: block;
+  }
+  footer{
+    display: block;
+    width: 100%;
+  }
+  .sideL{
+    width: 100%;
+    display: block;
+  }
+}
+@media(max-width: 760px){
+  header{
+    display: none;
+  }
+}
+
+/*************** END MEDIAQUERY ***************/
+
+
+ 
